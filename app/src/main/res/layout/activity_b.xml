@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nhti.explicitintent.ActivityB">
+
+    <TextView
+        android:text="@string/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_b"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_b"
+        android:layout_marginTop="123dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_b"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText1"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_b"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/textView1"
+        android:layout_marginTop="59dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_b"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:layout_marginBottom="62dp"
+        tools:layout_constraintBottom_creator="1" />
+
+    <Button
+        android:text="@string/answer_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_b"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_b"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_b"
+        android:layout_marginBottom="177dp"
+        tools:layout_constraintBottom_creator="1"
+        android:onClick="onClick" />
+</android.support.constraint.ConstraintLayout>
